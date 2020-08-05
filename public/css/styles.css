@@ -1,0 +1,144 @@
+/* libreria para funciones trigonometricas */
+body {
+  margin: 0;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: steelblue;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4), 0 0 0 20px white;
+}
+
+.clock {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.clock::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+}
+
+.hours {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours:nth-child(1) {
+  bottom: 190.52559px;
+  left: 110px;
+}
+
+.hours:nth-child(2) {
+  bottom: 110px;
+  left: 190.52559px;
+}
+
+.hours:nth-child(3) {
+  bottom: 0px;
+  left: 220px;
+}
+
+.hours:nth-child(4) {
+  bottom: -110px;
+  left: 190.52559px;
+}
+
+.hours:nth-child(5) {
+  bottom: -190.52559px;
+  left: 110px;
+}
+
+.hours:nth-child(6) {
+  bottom: -220px;
+  left: 0px;
+}
+
+.hours:nth-child(7) {
+  bottom: -190.52559px;
+  left: -110px;
+}
+
+.hours:nth-child(8) {
+  bottom: -110px;
+  left: -190.52559px;
+}
+
+.hours:nth-child(9) {
+  bottom: 0px;
+  left: -220px;
+}
+
+.hours:nth-child(10) {
+  bottom: 110px;
+  left: -190.52559px;
+}
+
+.hours:nth-child(11) {
+  bottom: 190.52559px;
+  left: -110px;
+}
+
+.hours:nth-child(12) {
+  bottom: 220px;
+  left: 0px;
+}
+
+.hour {
+  width: 10px;
+  height: 100px;
+  background-color: red;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: absolute;
+  top: 150px;
+  left: 245px;
+}
+
+.minute {
+  width: 10px;
+  height: 150px;
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: absolute;
+  top: 100px;
+  left: 245px;
+}
+
+.second {
+  width: 4px;
+  height: 180px;
+  background-color: darkgoldenrod;
+  position: absolute;
+  top: 70px;
+  left: 248px;
+}
